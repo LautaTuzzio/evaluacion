@@ -20,7 +20,7 @@ Este proyecto es una aplicación web sencilla que consta de archivos HTML, CSS y
 
 ## Autor
 
-- [Lautaro Tuzzio © Todos los derechos reservados]
+- [Lautaro Tuzzio © Todos los derechos reservados.]
 
 ---
 _Última actualización: 2025-05-14_
