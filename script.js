@@ -12,7 +12,7 @@ function calculate(value) {
             }
 
             // Reemplazar ^ por ** para eval
-            let expr = result.value.replace(/\^/g, '**');
+            let expr = result.value.replace(/\^/g, '**')
             // Usar Function constructor para evaluacion segura
             const safeEval = new Function('return ' + expr)
             result.value = safeEval()
@@ -35,7 +35,7 @@ function calculate(value) {
         } else if (value === '**') {
             result.value += '**'
         } else {
-            // Si el último carácter es '(', y el valor es un número, agregamos el número y cerramos el paréntesis
+            // Si el ultimo carácter es '(', y el valor es un numero, agregamos el numero y cerramos el parentesis
             if (result.value.slice(-1) === '(' && !isNaN(value)) {
                 result.value += value + ')';
             } else {
