@@ -16,6 +16,7 @@ function calculate(value) {
             // Usar Function constructor para evaluacion segura
             const safeEval = new Function('return ' + expr)
             result.value = safeEval()
+        // Evaluamos en base al signo
         } else if (value === '%') {
             result.value = eval(result.value + '/100')
         } else if (value === 'Math.sqrt(') {
